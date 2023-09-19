@@ -1,12 +1,11 @@
 =====
-Usage
+使い方
 =====
 
-The ``fix`` command
+``fix``コマンド
 -------------------
 
-The ``fix`` command tries to fix as much coding standards
-problems as possible on a given file or files in a given directory and its subdirectories:
+``fix``コマンドは、指定されたファイルまたはディレクトリ内のコードで、可能な限り多くのコーディング規約上の問題を修正しようと試みます。
 
 .. code-block:: console
 
