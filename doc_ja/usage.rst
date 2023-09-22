@@ -12,9 +12,10 @@
     php php-cs-fixer.phar fix /path/to/dir
     php php-cs-fixer.phar fix /path/to/file
 
-By default ``--path-mode`` is set to ``override``, which means, that if you specify the path to a file or a directory via
-command arguments, then the paths provided to a ``Finder`` in config file will be ignored. You can also use ``--path-mode=intersection``,
-which will use the intersection of the paths from the config file and from the argument:
+デフォルトでは ``--path-mode`` は ``override`` に設定されています。
+コマンドの引数でファイルやディレクトリのパスを指定した場合、設定ファイルの ``Finder`` に指定されたパスは無視されます。
+また、``--path-mode=intersection`` を使用することもできます。
+これは設定ファイルと引数のパスの交点を使用します：
 
 .. code-block:: console
 
