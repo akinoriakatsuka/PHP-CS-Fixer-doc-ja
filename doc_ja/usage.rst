@@ -31,9 +31,11 @@
 
     php php-cs-fixer.phar fix --path-mode=intersection /path/to/dir
 
-The ``--format`` option for the output format. Supported formats are ``txt`` (default one), ``json``, ``xml``, ``checkstyle``, ``junit`` and ``gitlab``.
+.. The ``--format`` option for the output format. Supported formats are ``txt`` (default one), ``json``, ``xml``, ``checkstyle``, ``junit`` and ``gitlab``.
+``--format`` オプションは出力形式を指定します。サポートされている形式は ``txt`` (デフォルト)、``json``、``xml``、``checkstyle``、``junit``、``gitlab`` です。
 
-NOTE: the output for the following formats are generated in accordance with schemas
+.. NOTE: the output for the following formats are generated in accordance with schemas
+NOTE: 以下の形式の出力は、以下のスキーマに従って生成されます。
 
 * ``checkstyle`` follows the common `"checkstyle" XML schema </doc/schemas/fix/checkstyle.xsd>`_
 * ``gitlab`` follows the `codeclimate JSON schema </doc/schemas/fix/codeclimate.json>`_
@@ -41,11 +43,14 @@ NOTE: the output for the following formats are generated in accordance with sche
 * ``junit`` follows the `JUnit XML schema from Jenkins </doc/schemas/fix/junit-10.xsd>`_
 * ``xml`` follows the `own XML schema </doc/schemas/fix/xml.xsd>`_
 
-The ``--quiet`` Do not output any message.
+.. The ``--quiet`` Do not output any message.
+``--quiet`` オプションはメッセージを出力しません。
 
-The ``--verbose`` option will show the applied rules. When using the ``txt`` format it will also display progress notifications.
+.. The ``--verbose`` option will show the applied rules. When using the ``txt`` format it will also display progress notifications.
+``--verbose`` オプションは適用されたルールを表示します。``txt`` 形式を使用する場合は、進捗通知も表示されます。
 
-NOTE: if there is an error like "errors reported during linting after fixing", you can use this to be even more verbose for debugging purpose
+.. NOTE: if there is an error like "errors reported during linting after fixing", you can use this to be even more verbose for debugging purpose
+NOTE: "errors reported during linting after fixing" のようなエラーがある場合は、デバッグ目的でさらに詳細にするためにこのオプションを使うことができます。
 
 * ``-v``: verbose
 * ``-vv``: very verbose
