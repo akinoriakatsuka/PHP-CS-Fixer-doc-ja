@@ -1,10 +1,17 @@
-=====
+.. =====
+.. Usage
+.. =====
+======
 使い方
-=====
+======
 
+.. The ``fix`` command
+.. -------------------
 ``fix`` コマンド
 -------------------
 
+.. The ``fix`` command tries to fix as much coding standards
+.. problems as possible on a given file or files in a given directory and its subdirectories:
 ``fix`` コマンドは、指定されたファイルまたはディレクトリ内のコードで、可能な限り多くのコーディング規約上の問題を修正しようと試みます。
 
 .. code-block:: console
@@ -12,6 +19,9 @@
     php php-cs-fixer.phar fix /path/to/dir
     php php-cs-fixer.phar fix /path/to/file
 
+.. By default ``--path-mode`` is set to ``override``, which means, that if you specify the path to a file or a directory via
+.. command arguments, then the paths provided to a ``Finder`` in config file will be ignored. You can also use ``--path-mode=intersection``,
+.. which will use the intersection of the paths from the config file and from the argument:
 デフォルトでは ``--path-mode`` は ``override`` に設定されています。
 コマンドの引数でファイルやディレクトリのパスを指定した場合、設定ファイルの ``Finder`` に指定されたパスは無視されます。
 また、``--path-mode=intersection`` を使用することもできます。
