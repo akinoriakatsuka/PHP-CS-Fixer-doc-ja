@@ -56,8 +56,9 @@ NOTE: "errors reported during linting after fixing" のようなエラーがあ�
 * ``-vv``: very verbose
 * ``-vvv``: debug
 
-The ``--rules`` option limits the rules to apply to the
-project:
+.. The ``--rules`` option limits the rules to apply to the
+.. project:
+``--rules`` オプションはプロジェクトに適用するルールを制限します:
 
 .. code-block:: console
 
