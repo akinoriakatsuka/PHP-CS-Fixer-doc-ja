@@ -64,9 +64,10 @@ NOTE: "errors reported during linting after fixing" のようなエラーがあ�
 
     php php-cs-fixer.phar fix /path/to/project --rules=@PSR12
 
-By default the ``PSR12`` rules are used. If the ``--rules`` option is used rules from config files are ignored.
-
-The ``--rules`` option lets you choose the exact rules to apply (the rule names must be separated by a comma):
+.. By default the ``PSR12`` rules are used. If the ``--rules`` option is used rules from config files are ignored.
+デフォルトでは ``PSR12`` ルールが使われます。  ``--rules`` オプションが使われた時は、configファイルのルールは無視されれます。
+.. The ``--rules`` option lets you choose the exact rules to apply (the rule names must be separated by a comma):
+ ``--rules`` オプションは適用する正確なルールを選ぶことを可能にします。（ルール名はコンマで分割されます）:
 
 .. code-block:: console
 
